@@ -162,12 +162,22 @@ p
 	width: 100%
 	padding: 0
 	margin: 0
+#section0
+	h1
+		display: none
+	img
+		display: none
+
 .green
 	height: 100vh
 	background: url("../img/bgd-green.png")
 	h1
 		font-family: "TT Wellingtons"
-
+.white
+	background: url("../img/bgd-white.png")
+.black
+	background: url("../img/bgd-black.png")
+	height: 100vh
 .w-wrench
 	height: 361px
 	width: 50px
@@ -175,6 +185,13 @@ p
 	position: absolute
 	bottom: 0
 	left: 0
+.b-wrench
+	width: 416px
+	height: 57px
+	background: url("../img/b-wrench.png") no-repeat
+	position: absolute
+	right: 0
+	top: 0
 .header-img
 	position: absolute
 	height: 746px
@@ -182,12 +199,16 @@ p
 	margin-top: -373px
 	left: 50%
 	margin-left: -423px
-	border: 1px solid red
+
 
 #section2
-	img
-		left: 130%
-		position: relative
-	p, h1
-		display: none
+	background: url("../img/background1.png") no-repeat
+	background-size: cover
+
+#section3
+  background: url("../img/background2.png")
+  background-size: cover
+
+
+
 @import "media" // Always at the end

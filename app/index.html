@@ -29,30 +29,58 @@
 <body>
 
 	<ul id="menu">
-		<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-		<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">1</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">2</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>
+		<li data-menuanchor="4rdPage"><a href="#4rdPage">4</a></li>
+		<li data-menuanchor="5rdPage"><a href="#5rdPage">5</a></li>
 	</ul>
 
 	<div id="fullpage">
-		<header class="section container-fluid" id="section0">
-			<section class="intro row">
+		<header class="section active container-fluid" id="section0">
+			<div class="intro row">
 
 				<div class="col-6 green">
-					<div class="w-wrench">
-
-					</div>
+					<div class="w-wrench"></div>
 					<h1>green123345</h1>
 				</div>
-				<div class="col-6 white"><h1>whihe</h1></div>
+				<div class="col-6 white">
+					<div class="b-wrench"></div>
+					<h1>whihe</h1>
+				</div>
 				<img class="header-img" src="img/header-img2.png" alt="header-img">
-			</section>
+			</div>
 		</header>
 
-		<div class="section" id="section1">
+		<section class="section" id="section2">
+			<div class="intro row">
+
+				<div class="col-6 white">
+					<div class="w-wrench"></div>
+					<h1>white123345</h1>
+				</div>
+				<div class="col-6 black">
+					<div class="b-wrench"></div>
+					<h1>black</h1>
+				</div>
+				<img class="header-img" src="img/header-img2.png" alt="header-img">
+			</div>
+		</section>
+
+		<section class="section" id="section2">
+			<div class="intro">
+
+				<img src="img/used-by-fullpage.PNG" />
+				<h1>3</h1>
+				<p>Hello</p>
+
+
+			</div>
+		</section>
+		<div class="section" id="section3">
 			<div class="slide" id="slide1">
 				<div class="intro">
-					<h1>Слайд 1</h1>
+					<h1>4</h1>
 					<p>
 						Для перехода к следующему слайду, нажмите по одной из кнопок панели навигации
 					</p>
@@ -79,16 +107,17 @@
 			</div>
 
 		</div>
-		<div class="section" id="section2">
+		<div class="section" id="section4">
 			<div class="intro">
 
 				<img src="img/used-by-fullpage.PNG" />
-				<h1>Третья страница</h1>
+				<h1>5</h1>
 				<p>Hello</p>
 
 
 			</div>
 		</div>
+
 	</div>
 
 	<script src="js/scripts.min.js"></script>
