@@ -6,9 +6,10 @@ jQuery(document).ready(function($) {
         scrollBar:false,
         //scrollOverflow:true
         navigation:true,
+        navigationPosition: 'right',
         navigationTooltips:['Секция 1','Секция 2','Секция 3','Секция 4','Секция 5'],
         slidesNavigation:false,
-        navigationPosition:'left',
+
         //slidesNavPosition:'top'
         // loopTop:false,
         // loopBottom:false,
