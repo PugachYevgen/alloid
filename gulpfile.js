@@ -36,7 +36,8 @@ gulp.task('js', function() {
 	return gulp.src([
 
 		'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/fullpage/jquery.fullPage.js',
+        'app/libs/fullpage/scrolloverflow.min.js',
+        'app/libs/fullpage/fullPage.js',
         'app/libs/fullpage/jquery.slimscroll.min.js',
 		'app/js/common.js', // Always at the end
 		])

@@ -4,38 +4,97 @@ jQuery(document).ready(function($) {
         anchors:['firstPage','secondPage','3rdPage','4rdPage','5rdPage'],
         menu:'#menu',
         scrollBar:false,
-        //scrollOverflow:true
         navigation:true,
         navigationPosition: 'right',
-        navigationTooltips:['Секция 1','Секция 2','Секция 3','Секция 4','Секция 5'],
+        navigationTooltips:['Головна','Чому ми?','Гарантія','Напрямки','Про нас','Компанії які нам довіряють'],
         slidesNavigation:false,
+        scrollOverflow: true,
 
-        //slidesNavPosition:'top'
-        // loopTop:false,
-        // loopBottom:false,
-        // loopHorizontal:false,
 
-        // afterResize:function(link,index) {
-        //     alert('Hello');
-        // },
-        // afterLoad:function(origin) {
+
+
+
+
+
+        afterLoad: function(destination, origin){
+            var loadedSection = this;
+
+            //использование индекса
+            if(origin.index == 0){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+
+            }
+            if(origin.index == 1){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+
+
+            }
+            if(origin.index == 2){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+            }
+            if(origin.index == 3){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+            }
+            if(origin.index == 4){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+            }
+            if(origin.index == 5){
+                $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+            }
+
+
+        },
+
+        // onLeave: function(origin){
+        //     var loadedSection = this;
         //
-        //     if(origin) {
-        //         $("#section0 img").delay(300).animate({'left':'0%'},300);
-        //         $("#section0 h1").fadeIn(300,function() {
-        //                    $("#section0 p").css({'display':'block'}).animate({'fontSize':'8em'},300)
-        //                  });
+        //     //использование индекса
+        //     if(origin.index == 0){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+        //
         //     }
-        //     if(link == 'firstPage') {
-        //         $("#section0 h1").fadeIn(300,function() {
-        //             $("#section0 p").css({'display':'block'}).animate({'fontSize':'8em'},300)
-        //         });
+        //     if(origin.index == 1){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+        //
+        //     }
+        //     if(origin.index == 2){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+        //
+        //     }
+        //     if(origin.index == 3){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+        //     }
+        //     if(origin.index == 4){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+        //
+        //
+        //     }
+        //     if(origin.index == 5){
+        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
+        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
         //     }
         //
+        //
         // },
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
         afterRender: function(){
             var pluginContainer = this;
-            $("#section0 img").delay(300).fadeIn(1300);
+            // $("#section0 img").delay(300).fadeIn(1300);
             $("#section0 h1").fadeIn(1500,function() {
                 $("#section0 p").css({'display':'block'}).animate({'fontSize':'8em'},300)
             });
@@ -43,4 +102,5 @@ jQuery(document).ready(function($) {
 
 
     });
+
 })

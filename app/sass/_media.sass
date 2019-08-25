@@ -6,6 +6,8 @@
 
 //Extra large: ≥1200px
 +media-breakpoint-down(xl)
+  .mobile-tools
+    display: none
 
 //Large: ≥992px
 +media-breakpoint-down(lg)
@@ -15,11 +17,243 @@
 
 //Small: ≥576px
 +media-breakpoint-down(sm)
+  .green
+    display: none
+  #fp-nav
+    display: none
+  .white
+    background: url("../img/bgd-black.png")
+    height: 100vh
+    h1
+      font-size: 2.1em
+      left: 130px
+      color: #ffffff
+      line-height: 1.5em
+      top: 250px
+  .header-img
+    display: none
+  .header-img-mobile
+    display: block
+    position: absolute
+    height: 480px
+    bottom: 50%
+    margin-bottom: -240px
+    left: -30px
 
+  .medal2
+    display: flex
+    img
+      width: 15vw
+    span
+      display: block
+      transform: rotate(-90deg)
+      margin-bottom: 80px
+      font-weight: bold
+      color: #ffffff
+      font-size: 10px
+  .logo
+    left: 0
+    img
+      width: 40vw
+  .mob-screws
+    height: 136px
+    width: 205px
+    right: 5px
+    position: absolute
+    top: 140px
+    display: block
+    background: url("../img/mobile-screws.png")
+    background-size: cover
+  .b-wrench
+    display: none
+  .w-wrench2
+    display: none
+  //#section1
+    //.row
+    //  height: 200vh
+  .advantage
+    padding-left: 0
+    padding-right: 0
+
+  .advantage-box
+    display: none
+  .advantage-black
+    display: none
+  .mobile-tools
+    display: block
+  .mobile-tool1,.mobile-tool2,.mobile-tool3,.mobile-tool4,.mobile-tool5,.mobile-tool6
+    display: flex
+    align-items: center
+    margin-top: 50px
+  .mobiletool-img1
+    width: 35%
+    height: 150px
+    background: url("../img/adv-tool1.png") no-repeat
+    background-size: 100%
+    margin-left: -20px
+    margin-top: 80px
+  .mobiletool-img2
+    width: 32%
+    height: 150px
+    background: url("../img/adv-tool2.png") no-repeat
+    background-size: 100%
+    margin-left: -20px
+
+  .mobiletool-img3
+    width: 32%
+    height: 300px
+    background: url("../img/adv-tool31.png") no-repeat -25px 0
+    background-size: 200%
+    margin-left: -20px
+    position: relative
+    overflow: hidden
+
+    //&:before
+    //  content: ""
+    //  position: absolute
+    //  top: 50%
+    //  left: 50%
+    //  background: url("../img/adv-tool31.png") no-repeat
+    //  transform: rotate(45deg)
+    //  border: 1px solid green
+    //  height: 200%
+    //  width: 200%
+  .adv-wrench1
+    position: relative
+    left: 0
+    top: 0
+    width: 68%
+    p
+      width: inherit
+      height: inherit
+      margin-right: 0
+  .mobile-wrench-cont
+    width: 68%
+  .adv-wrench3
+    position: relative
+    left: 0
+    top: 0
+
+    &:nth-of-type(1)
+      margin-bottom: 25px
+    p
+      height: 150px
+      margin-right: 0
+      width: 170px
+  .adv-wrench_head
+    transform: rotate(180deg)
+    background-size: 78%
+    margin-left: -1px
+
+    height: 30px
+
+  .adv-wrench1_line
+    margin-left: 0
+    margin-right: 0
+    width: 30px
+  .adv-wrench_stripes
+    margin-right: 7px
+    height: 150px
+  .b-saw
+    display: none
+
+  .w-saw
+    display: none
+  #section2
+    h1
+      font-size: 1.5em
+      margin-top: 90px
+    h2
+      padding-right: 0
+      padding-top: 30px
+      font-size: 1.8em
+
+    p
+      padding-right: 0
+  .white-wrench2
+    display: none
+  .standards
+    padding-top: 40px
+    padding-left: 30px
+  .hummer
+    display: none
+  #section3
+    h1
+      font-size: 1.5em
+      left: 50%
+      margin-left: -110px
+      top: 30px
+      &:before
+        top: -13px
+  .slide
+    h2
+      font-size: 1.8em
+      padding-left: 45px
+      margin-bottom: 50px
+    ul
+      li
+        font-size: 1.1em
+        margin-left: 10px
+        &:before
+          top: -5px
+  .sup-box
+    height: 35vh
+  .sup-box2
+    height: 25vh
+  .fp-controlArrow.fp-prev
+    top: 90%
+  .fp-controlArrow.fp-next
+    top: 90%
+  #section4
+    h1
+      margin-top: 1em
+    p
+      margin-top: 15px
+      color: #ffffff
+      font-size: .9em
+      &:nth-of-type(1)
+        margin-top: 35px
+
+  .partners
+
+    h1
+      font-size: 20px
+
+      &:before
+        top: -10px
+  .company
+    width: 308px
+    height: 50px
+    background-size: 75%
+    background-position: center
+  .fin
+    bottom: -17px
 //Extra small: >0
 +media-breakpoint-down(xs)
-
-
+  .green
+    display: none
+  #fp-nav
+    display: none
+  .white
+    h1
+      font-size: 9vw
+      line-height: 13vw
+      top: 200px
+  .mob-screws
+    top: 90px
+  .header-img
+    display: none
+  .medal2
+    display: flex
+    img
+      width: 20vw
+    span
+      display: block
+      transform: rotate(-90deg)
+      margin-bottom: 70px
+      font-weight: bold
+      color: #ffffff
+      font-size: 14px
 /*==========  Mobile First  ==========*/
 
 //Extra small: <576px
