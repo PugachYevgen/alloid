@@ -9,98 +9,45 @@ jQuery(document).ready(function($) {
         navigationTooltips:['Головна','Чому ми?','Гарантія','Напрямки','Про нас','Компанії які нам довіряють'],
         slidesNavigation:false,
         scrollOverflow: true,
-
-
-
-
-
-
-
         afterLoad: function(destination, origin){
             var loadedSection = this;
 
             //использование индекса
             if(origin.index == 0){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
 
             }
             if(origin.index == 1){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-
-
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
             }
             if(origin.index == 2){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
+                $('#section2 h1').css({'opacity':'1'})
             }
             if(origin.index == 3){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
+                $('#section3 h1').css({'opacity':'1'})
             }
             if(origin.index == 4){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
+                $('#section4 h1').css({'opacity':'1'})
             }
             if(origin.index == 5){
                 $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
-                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
+                $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'});
+                $('.partners h1').css({'opacity':'1'})
             }
 
 
         },
-
-        // onLeave: function(origin){
-        //     var loadedSection = this;
-        //
-        //     //использование индекса
-        //     if(origin.index == 0){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //
-        //     }
-        //     if(origin.index == 1){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //
-        //     }
-        //     if(origin.index == 2){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //
-        //     }
-        //     if(origin.index == 3){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //     }
-        //     if(origin.index == 4){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench-white.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //
-        //
-        //     }
-        //     if(origin.index == 5){
-        //         $('#fp-nav ul li a span,'+'.fp-slidesNav ul li a span').css({'background':'url("../img/menu-wrench.png")'});
-        //         $('#fp-nav ul li a.active span,'+'.fp-slidesNav ul li a.active span').css({'background':'url("../img/menu-wrench-active.png")'})
-        //     }
-        //
-        //
-        // },
-
-
-
-
-///////////////////////////////////////////////////////////////////////////
         afterRender: function(){
-            var pluginContainer = this;
-            // $("#section0 img").delay(300).fadeIn(1300);
-            $("#section0 h1").fadeIn(1500,function() {
-                $("#section0 p").css({'display':'block'}).animate({'fontSize':'8em'},300)
-            });
+            $("#section0 h1").css({'opacity':'1'});
         }
-
-
     });
 
 })

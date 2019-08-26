@@ -28,6 +28,7 @@ body
 			&:required:valid
 				border-color: green
 
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -78,13 +79,19 @@ h1, h2, h3, h4, h5, h6
 	padding: 0
 
 
+
 q
 	&:before, &:after
 		content: ''
 
 abbr, acronym
 	border: 0
-
+.container-fluid
+	padding-left: 0
+	padding-right: 0
+.row
+	padding-left: 15px
+	padding-right: 15px
 /* Custom CSS
  * ---------------------------------------
 
@@ -131,12 +138,16 @@ abbr, acronym
 	top: 0
 #section0
 	h1
-		display: none
 		text-align: left
 		position: relative
 		z-index: 99
 		text-transform: uppercase
-		font-family: opensans-extra
+		font-family: osanscondensed
+		font-size: 5.5em
+		opacity: 0
+		transition: 1s linear
+
+
 
 .green
 	height: 100vh
@@ -213,7 +224,9 @@ abbr, acronym
 	//display: none
 #section1
 	font-weight: bold
-
+	h1
+		opacity: 0
+		transition: 1s linear
 
 .advantage-white
 	background: url("../img/bgd-white.png")
@@ -509,6 +522,9 @@ abbr, acronym
 		text-transform: uppercase
 		text-align: center
 		font-family: opensans-extra
+		opacity: 0
+		transition: 1s linear
+
 		&:before
 			content: attr(data-bg)
 			font-size: 1.6em
@@ -580,6 +596,8 @@ abbr, acronym
 		top: 10px
 		left: 50%
 		margin-left: -300px
+		opacity: 0
+		transition: 1s linear
 
 		z-index: 10
 		&:before
@@ -649,6 +667,8 @@ abbr, acronym
 		text-transform: uppercase
 		text-align: center
 		font-family: opensans-extra
+		opacity: 0
+		transition: 1s linear
 		&:before
 
 			content: attr(data-bg)
@@ -665,11 +685,10 @@ abbr, acronym
 	p
 		margin-top: 35px
 		color: #ffffff
-		font-size: 1.5em
+		font-size: 1.4em
 		&:nth-of-type(1)
-			margin-top: 100px
+			margin-top: 10vh
 .partners
-
 	h1
 		color: #131313
 		font-size: 4em
@@ -678,6 +697,8 @@ abbr, acronym
     	text-align: center
 		font-family: opensans-extra, serif
 		text-align: center
+		opacity: 0
+		transition: 1s linear
 		&:before
     		content: attr(data-bg)
     		font-size: 1.6em
